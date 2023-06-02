@@ -1,0 +1,17 @@
+<header>
+    <div class="header-container">
+      <div class="logo">
+       <h3>Fomation angulare</h3>
+      </div>
+  
+      <div class="select-box">
+        <select class="form-control" #selectedLang (change)="changeLanguage(selectedLang.value)">
+          <option *ngFor="let language of availableLanguage" [value]="language"
+            [selected]="language === currentLanguage">
+            {{ language }}
+          </option>
+        </select>
+      </div>
+    </div>
+  </header>
+  
