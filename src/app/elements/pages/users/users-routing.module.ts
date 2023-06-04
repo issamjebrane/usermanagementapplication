@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddComponent } from './add/add.component';
 import { ListComponent } from './list/list.component';
+import { AddComponent } from './add/add.component';
 
-const userRoutes: Routes = [
-  {path:"users/add",component:AddComponent},
-  {path:"users/list",component:ListComponent}
+const routes: Routes = [
+  {
+    path: 'users',
+    component: ListComponent
+  },
+  {
+    path: 'users/add/:pages',
+    component: AddComponent
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(userRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-
-export class UsersRoutingModule{
-
-}
+export class UsersRoutingModule { }

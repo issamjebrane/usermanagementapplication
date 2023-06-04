@@ -1,54 +1,13 @@
-.list{
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-}
 table {
-    width: 100%;
-    border-collapse: collapse;
+  tbody {
+      .users-list-avatar {
+          border: 1px solid #bebebe;
+          border-radius: 50%;
+          height: 35px;
+          width: 35px;
+      }
+      .gif-loading {
+          height: 35px;
+      }
   }
-  
-  th, td {
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  th {
-    font-weight: bold;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tr:nth-child(odd) {
-    background-color: #fff;
-  }
-  
-  img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-  }
-  
-.addUser{
-    background-color: green;
-    border-style: none;
-    border-radius: 7px;
-    padding: 5px 10px;
-    color: white;
-    align-self: flex-end;
-    cursor: pointer;
-}
-
-.action{
-    cursor: pointer;
-}
-.action:after{
-    content: "";
-    margin:0 0.5em;
-    display:inline-block;
-    border: 5px solid transparent;
-    border-top:7px solid gray;
-    border-bottom:0 none;
 }

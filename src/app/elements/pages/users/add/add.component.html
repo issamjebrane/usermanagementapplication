@@ -1,1 +1,19 @@
-<p>add works!</p>
+<div class="content">
+    <h4>{{ 'pages.add.title' | translate }}</h4>
+  <form [formGroup]="formData" (ngSubmit)="onClickSubmit()" class="row g-3">
+    <div class="col-12">
+      <label for="first_name" class="form-label">First Name</label>
+      <input type="text" name="first_name" id="first_name" formControlName="first_name" class="form-control">
+    </div>
+    <div class="col-12">
+      <label for="last_name" class="form-label">Last Name</label>
+      <input type="text" name="last_name" id="last_name" formControlName="last_name" class="form-control">
+    </div>
+    <div class="col-12">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email" name="email">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" [disabled]="!formData.valid">submit</button>
+    </div>  </form>
+</div>

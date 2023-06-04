@@ -1,3 +1,3 @@
 export const environment = {
-    apiLink:"https://reqres.in/api/users"
+    apiLink:"https://reqres.in/api"
 };
